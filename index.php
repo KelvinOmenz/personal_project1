@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-    <!-- Other meta tags, links to CSS, scripts, etc. go here -->
-</head>
-<body>
-    <!-- The visible content of the web page goes here -->
-    <h1>Welcome to My Website</h1>
-    <?php
+<?php
 // Read the variables sent via POST from our API
 $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
@@ -188,6 +177,3 @@ if ($text == "") {
 header('Content-type: text/plain');
 echo $response;
 
-
-</body>
-</html>
